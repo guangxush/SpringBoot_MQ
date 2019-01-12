@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class KafkaConsumerService {
     @KafkaListener(topics = {"study-microboot"})
     public void receiveMessage(ConsumerRecord<String, String> record) { // 进行消息接收处理
-        System.err.println("【*** 接收消息 ***】key = " + record.key() + "、value = "
+        System.err.println("Receive Message:------" + record.key() + "; value = "
                 + record.value());
     }
 }

@@ -22,7 +22,7 @@ public class ActiveMQTest {
     @Test
     public void testSend() throws Exception {
         for (int x = 0; x < 10; x++) {
-            this.messageProducer.sendMessage("study - " + x);
+            this.messageProducer.sendMessage("Send Message:------" + x);
         }
     }
 }

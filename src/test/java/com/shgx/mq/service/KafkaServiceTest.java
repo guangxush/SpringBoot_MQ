@@ -22,7 +22,7 @@ public class KafkaServiceTest {
     @Test
     public void testStart() throws Exception {
         for (int x = 0; x < 100; x++) {
-            this.messageService.sendMessage("study - " + x);
+            this.messageService.sendMessage("Send Message:------" + x);
         }
     }
 }

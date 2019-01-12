@@ -22,7 +22,7 @@ public class RabbitMQProducerTest {
     @Test
     public void testSend() throws Exception {
         for (int x = 0; x < 100; x++) {
-            this.messageProducer.sendMessage("study - " + x);
+            this.messageProducer.sendMessage("Send Message:------" + x);
         }
     }
 }
